@@ -5,6 +5,7 @@ export default (req, res) => {
     // create reusable transporter object using the default SMTP transport
     let email = process.env.EMAIL;
     let password = process.env.PASSWORD;
+    console.log(email, password);
 
     let transporter = nodemailer.createTransport({
         service: 'gmail',
